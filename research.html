@@ -1,0 +1,359 @@
+<html><head>
+<!-- <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+-->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<link rel="stylesheet" type="text/css" href="resources/style.css">
+<title>Research</title>
+
+<script>
+window['_fs_debug'] = false;
+window['_fs_host'] = 'www.fullstory.com';
+window['_fs_org'] = '2325V';
+window['_fs_namespace'] = 'FS';
+(function(m,n,e,t,l,o,g,y){
+    if (e in m && m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].'); return;}
+    g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+    o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+    y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+    g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+    g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+    g.clearUserCookie=function(c,d,i){if(!c || document.cookie.match('fs_uid=[`;`]*`[`;`]*`[`;`]*`')){
+    d=n.domain;while(1){n.cookie='fs_uid=;domain='+d+
+    ';path=/;expires='+new Date(0).toUTCString();i=d.indexOf('.');if(i<0)break;d=d.slice(i+1)}}};
+})(window,document,window['_fs_namespace'],'script','user');
+</script>
+
+</head><body>
+
+<div id="container">
+
+<div id="leftnav">
+<p>
+  <a href="index.html">Home</a><br>  
+  <a href="research.html">Research</a><br>  
+  <a href="papers.html">Publications</a><br>
+  <a href="teaching.html">Teaching</a><br>    
+  <a href="code.html">Codes & Data</a><br>      
+  <a href="group.html">ML Group</a><br>  
+  <a href="seminar.html">ML Seminar</a><br>
+</p>
+</div>
+
+<div id="content">
+
+<p>
+<h1>Research</h1>
+</p><br>
+
+<!--
+<h3> Principal Collaborators </h3>
+
+<ul>
+  <li> <a href="http://alex.smola.org">Alex Smola</a>, 
+    Principal Researcher, Yahoo! Research, Santa Clara
+  </li>
+  <li> <a href="http://www.gatsby.ucl.ac.uk/~gretton/">Arthur Gretton</a>, 
+    Lecturer, Gatsby Computational Unit, University College of London, London
+  </li>
+  <li><a href="http://www.kyb.mpg.de/~bs">Bernhard Schölkopf</a>,
+    Professor, Max-Planck Institute for Biological Cybernetics, Tübingen
+  <li><a href="www.cs.cmu.edu/~guestrin/">Carlos Guestrin</a>,
+    Associate Professor, Carnegie Mellon University, Pittsburgh
+  <li><a href="http://www.cs.cmu.edu/~epxing/">Eric Xing</a>,
+    Associate Professor, Carnegie Mellon University, Pittsburgh
+  </li>  
+  <li> <a href="http://webdav.tuebingen.mpg.de/u/karsten/">Karsten Borgwardt</a>, 
+    Assistant Professor, Max-Planck Institute for Developmental Biology, Tübingen
+  </li>
+  <li> <a href="http://www.ism.ac.jp/~fukumizu/">Kenji Fukumizu</a>,
+    Professor, The Institute of Statistical Mathematics, Tokyo
+  </li>
+</ul>
+-->
+
+<h2>Summary</h2>
+
+<p>
+My principal research interests lie in the development of efficient algorithms and intelligent systems which can learn from a massive volume of complex (high dimensional, nonlinear, multi-modal, skewed, and structured) data arising from both artificial and natural systems, reveal trends and patterns too subtle for humans to detect, and automate decision making processes in uncertain and dynamic possible world. I develop core machine learning methodology, including kernel methods, feature space embedding methods, graphical models, probabilistic and stochastic modeling, scalable algorithms, optimization algorithms and deep learning models.
+</p>
+
+<p>
+I am also interested in developing machine learning models and algorithms to address interdisciplinary problems. For instance, I've conducted research on the management of information diffusion networks and recommendation systems, the discovery of time-varying gene regulatory networks, the understanding of disease progression, the extraction of topics based on online document feeds, the prediction of materials properties, and the predictive modeling of robotic systems.
+</p>
+
+<p>
+My research work center around four major themes (more information here <a href="research.html">link</a>): 
+<ul>
+  <li>Embedding: A Learning Framework for Complex Distributions, Structures and Dynamics</li>
+  <li>Dynamic Processes over Networks: Representation, Modeling, Learning, Inference, Optimization and Control</li>
+  <li>Large Scale Machine Learning: Efficient Algorithms, Distributed Learning, and High Performance Computing Techniques</li>
+  <li>Interdisciplinary Problems: Social Network Analysis, Healthcare Analytics, Computational Biology and Neuroscience, Materials Science</li>
+</ul>	
+
+<h2>Embedding: A Learning Framework for Complex Distributions, Structures and Dynamics</h2>
+
+<p>
+In particular, nonlinear phenomena, complex distributions, and intricate structures and dynamics are prevalent in a diverse range of AI and machine learning problems, and learning from such higher order information is the major focus of my research. For instance, recent successes of machine learning in speech
+recognition, image classification and reinforcement learning are all attributed to the utilization of such higher
+order information. The usefulness of such information goes far beyond the above prominent examples, and it
+also manifests in many applications I addressed before, for instance, the analysis of evolving social information
+networks, the reasoning with temporal knowledge graphs, the modeling of networked dynamical systems, the
+building of materials-property linkage, and the understanding of molecular networks and disease progression.
+</p>
+
+<p>
+With increasing availability of big data, nonlinear phenomena, complex distributions, or intricate structures and
+dynamics which are not clear or can not be inferred reliably from small data now become clear, and need to
+be taken into account. However, the forms of nonlinearity, the critical features of a distribution, or the useful
+structures and dynamics are typically not known to us, and need to be learned from data as well. Most learning
+algorithms in the big data regime rely heavily on linear models, parametric assumptions and simple structures
+in order to scale up. They quickly become inadequate in capturing the increasing complexity of big data, and
+conclusions inferred under these restricted assumptions can be misleading. Being able to harness higher order
+information could allow us to tackle problems which are impossible before, or obtain results which are far better
+than previous state-of-the-arts. Thus there is a great need for, and it is my research focus to develop efficient
+and flexible methods which can adapt to the complexity of big data, and learn effective nonlinear features from
+complex distributions, structures and dynamics.
+</p>
+
+<p>
+In my research, I pioneered a novel framework, called “embedding”, to deal with a massive volume of such
+complex data. The key idea of the framework is to map distributions, structures and dynamics to nonlinear
+feature spaces, such that manipulation, comparison and learning can be carried out via simple linear algebraic
+operations such as inner product, distance, inversion and spectral decompositions. The embedding framework
+draws upon the strength of probabilistic graphical models, kernel methods, optimization, point processes, network
+analysis, stochastic control and functional analysis, and has made significant contributions to several fundamental
+research questions in machine learning: what is a good representation for complex distributions? How to exploit
+structures? How to design efficient algorithms to discover nonlinear relations? How to faithfully model complex
+and possibly dynamic data arising from networked systems and interdisciplinary problems?
+</p>
+
+<p>
+Representative Papers: 
+</p>
+<ul>
+  <li>H. Dai, Y. Wang, R. Trivedi and L. Song. Recurrent Coevolutionary Feature Embedding Processes for Recommendation, Recsys Workshop on Deep Learning for Recommendation Systems, 2016. <a href="http://arxiv.org/abs/1609.03675">PDF</a> (<font color="red">BEST PAPER</font>). (<font color="red">Media coverage <a href="http://www.cc.gatech.edu/news/583583/cse-grad-students-wins-best-paper-award-recsys-conference">link</a></font>)
+  </li> 
+  <li>H. Dai, B. Dai, Y. Zhang, S. Li and L. Song. Recurrent Hidden Semi-Markov Model. submitted to ICLR 2016. <a href="https://openreview.net/pdf?id=HJGODLqgx">PDF</a>. 
+  </li>
+  <li>H. Dai, B. Dai and L. Song. Discriminative Embeddings of Latent Variable Models for Structured Data, International Conference on Machine Learning (ICML), 2016. <a href="http://arxiv.org/abs/1603.05629">PDF</a>. Related to deep learning for graph and network data, and materials science. (<font color="red">Media coverage <a href="http://www.rh.gatech.edu/features/cyber-forged">link</a></font>) 
+  </li> 
+  <li> L. Song, A. Anandkumar, B. Dai and B. Xie. Nonparametric estimation of multi-view latent variable models. International Conference on Machine Learning (ICML 2014).
+    <a href="papers/SonAnaDaiXie14.pdf">PDF</a>
+  </li>
+  <li>
+    Song, L., Fukumizu, K., and Gretton, A., Kernel Embedding of Conditional Distributions, IEEE Signal Processing Magazine, 2013.
+    <a href="papers/SonFukGre13.pdf">PDF</a>
+  </li>  
+  <li>
+    Fukumizu, K., Song, L., and Gretton, A., Kernel Bayes' Rule, Journal of Machine Learning Researches, 2013.
+    <a href="papers/FukSonGre11.pdf">PDF</a>
+  </li>
+  <li> 
+    Song, L., Gretton, A., Bickson, D., Low, Y., and Guestrin, C., Kernel Belief Propagation, International Conference on Artifical Intelligence and Statistics (AISTATS), 2011.
+    <a href="papers/SonGreBicLowEtal11.pdf">PDF</a>
+  </li>
+  <li> 
+    Song, L., Boots, B., Siddiqi, S., Gordon, G., and Smola, A., Hilbert Space Embeddings of Hidden Markov Models, International Conference on Machine Learning (ICML), 2010.
+    <a href="papers/SonBooSidGorEtal10.pdf">PDF</a>
+    (<font color="red">BEST PAPER</font>)
+  </li>
+  <li>
+    Song, L., Smola, A., Gretton, A., Borgwardt, K., and Bedo, J., Supervised Feature Selection via Dependence Estimation, ICML 2007. <a href="papers/SonSmoGreetal07a.pdf">PDF</a>. JMLR 2012 version. <a href="papers/SonSmoGreBedetal12.pdf">PDF</a>
+  </li>
+  <li>Smola, A., Gretton, A., Song, L., and Scholkopf, B. A Hilbert Space Embedding for Distributions, Algorithmic Learning Theory (ALT 2007). <a href="papers/SmoGreSonSch07.pdf">PDF</a>
+  </li>
+</ul>
+
+<p>
+  <img src="resources/embedding.png" alt="" width="800" height="380">
+</p>
+<p>
+  <img src="resources/embedding_hmm.png" alt="" width="800" height="160">
+</p>
+<p>
+  <img src="resources/graph_embedding.png" alt="" width="800" height="180">
+</p>
+<p>
+  <img src="resources/coevolving_feature.png" alt="" width="800" height="280">    
+</p>
+
+<!--
+<h3>Probabilistic Graphical Models</h3>
+
+<p>
+Probabilistic graphical models are good tools
+for representing structured dependencies between random
+variables in challenging tasks in social networks, 
+natural language processing, computer vision, and beyond. 
+Most existing applications of graphical models are restricted to cases
+where each random variable can take on only
+a relatively small number of values, or, in continuous
+domains, where the joint distributions are Gaussians.
+</p>
+<p>
+I developed a novel nonparametric representation
+for graphical models based on the concept of 
+kernel embeddings of distributions. 
+This new representation allows one to conduct learning and 
+inference in graphical model with much more general distributions. 
+</p>
+<p>
+Nonparametric graphical models have been applied to
+various learning problems, such as cross-language document retrieval, 
+estimating depth from a single image, classification and forecast for 
+dynamical system models of video, speech and sensor time series. 
+In these applications, this new method outperforms state-of-the-art techniques.
+</p>
+-->
+
+<h2>Dynamic Processes over Networks: Representation, Modeling, Learning, Inference, Optimization and Control</h2>
+
+<p>
+Much of the world's information has a relational structure and can be modelled mathematically as networks and graphs. Examples include biological networks, webgraphs and social networks. Many of these large and complex networks exhibit rich spatial and temporal phenomena. Traditional graph modeling, analysis and visualization algorithms are not able to capture this complex spatial and temporal behavior. 
+</p>
+<p>
+Nowadays, large-scale event data from biological and healthcare system, and online social platforms, such as Twitter, Facebook, Reddit, Stackoverflow, Wikipedia and Yelp, are becoming increasing available and in increasing spatial and temporal resolutions. Such data provide great opportunities for understanding and modeling both macroscopic (network-
+level) and microscopic (node-level) patterns in human dynamics. Such data have also fueled the increasing efforts on developing realistic representations and models as well as learning, inference and control algorithms to understand, predict, control and distill knowledge from these dynamic processes over networks. It has emerged as a trend to take a bottom-up approach which starts by considering the stochastic mechanism driving the behavior of each node in a network to later produce global, macroscopic patterns at a network level. However, this bottom-up approach also raises significant modeling, algorithmic and computational challenges which require leveraging methods from machine learning, point process theory, probabilistic modeling and optimization. 
+</p> 
+<p>
+I designed new framework for analying dynamic processes over networks leveraging tools from machine learning, point processes, probabilistic modeling, optimization, stochastic control and deep learning. For instance, I have been studying information diffusion in social networks using continuous-time diffusion models, and using nonparametric estimation algorithms to understand the modality of social interactions, developing methods to control or steer dynamics of social events based on these models, and combine deep learning with point processes for better online recommendation systems.   
+</p>
+
+<p>
+Representative Papers: 
+</p>
+<ul>
+  <li>H. Dai, Y. Wang, R. Trivedi and L. Song. Recurrent Coevolutionary Feature Embedding Processes for Recommendation, Recsys Workshop on Deep Learning for Recommendation Systems, 2016. <a href="http://arxiv.org/abs/1609.03675">PDF</a> (<font color="red">BEST PAPER</font>). (<font color="red">Media coverage <a href="http://www.cc.gatech.edu/news/583583/cse-grad-students-wins-best-paper-award-recsys-conference">link</a></font>)
+  </li> 
+  <li>M. Farajtabar, Y. Wang, M. Rodriguez, S. Li, H. Zha and L. Song (2015).
+  COEVOLVE: A Joint Point Process Model for Information Diffusion and
+  Network Co-evolution. Advances in Neural Information Processing Systems
+  25 (NIPS 2015). <a href="http://arxiv.org/abs/1507.02293">PDF</a>
+  </li>
+  <li>Farajtabar, M., Du, N., Rodriguez, M., Valera, I., Zha, H., and Song, L. Shaping Social Activity by Incentivizing Users. Neural Information Processing Systems (NIPS 2014). <a href="papers/FarDuRodValZhaSon14.pdf ">PDF</a>
+  </li>
+  <li> N. Daneshmand, M. Rodriguez, L. Song and B. Scholkopf (2014). Estimating diffusion network structure: recovery conditions, sample complexity, and a soft-thresholding algorithm. International Conference on Machine Learning (ICML 2014).
+    <a href="papers/DanRodSonSch14.pdf">PDF</a>
+  </li>
+  
+  <li>
+    Du, N., Song, L., Rodriguez, M., and Zha, H., Scalable Influence Estimation for Continuous-Time Diffusion Networks, Neural Information Processing Systems (NIPS), 2013.
+    <a href="papers/DuSonRodZha13.pdf">PDF</a>    
+    (<font color="red">BEST PAPER</font>)
+  </li>
+  <li>E. Khalil, B. Dilkina and L. Song. CuttingEdge: Influence minimization in networks. NIPS    Workshop on Frontiers of Network Analysis: Methods, Models, and Applications, 2013. 
+ <a href="http://www.cc.gatech.edu/~lsong/papers/KhaDilSon14.pdf">PDF</a> 
+ (<font color="red">BEST PAPER</font>)
+  </li>
+  <li>
+    Kolar, M., Song, L., Ahmed, A., and Xing, E., Estimating Time-Varying Networks, Annals of Applied Statistics, 2010. 
+    <a href="papers/KolSonAhmXin10.pdf">PDF</a>
+  </li>
+  <li>
+    Song, L., Kolar, M., and Xing, E., KELLER: Estimating Time-Evolving Interactions between Genes, Bioinformatics (ISMB), pp.i128--i136, 2009. 
+    <a href="papers/SonKolXin09.pdf">PDF</a> 
+  </li>	
+</ul>
+
+<p>
+  <img src="resources/dynamic_network.png" alt="" width="800" height="420">
+</p>
+<p>
+  <img src="resources/coevolution_model.png" alt="" width="800" height="360">
+</p>
+<p>
+  <img src="resources/timevarying.png" alt="" width="800" height="460">
+</p>
+
+
+<h2>Large Scale Machine Learning: Efficient Algorithms, Distributed Learning, and High Performance Computing Techniques</h2>
+
+<p>
+When facing large amount of data, machine learning methods especially nonparametric methods needs to be carefully designed in order to scale up. In my research, I have designed clever algorithms, distributed and randomized algorithms, and used high performance computing techniques to scale up maching learning algorithms. My group can easily handle datasets with hundreds of millions of data points, and problems with billions of dimensions. 
+</p>
+
+<p>
+Representative Papers: 
+</p>
+<ul>
+  <li>B. Dai, N. He, H. Dai and L. Song. Provable Bayesian Inference via Particle Mirror Descent, Artificial Intelligence and Statistics (AISTATS), 2016. <a href="http://arxiv.org/abs/1506.03101">PDF</a> (<font color="red">BEST Student PAPER</font>)
+  </li> 
+  <li> N. Balcan, Y. Liang, L. Song, D. Woodruff and B. Xie. Distributed Kernel Principal Component Analysis, Knowledge Discovery and Data Mining (KDD), 2016. <a href="http://arxiv.org/abs/1503.06858">PDF</a>  
+  <li>You, Y., Demmel, J., Czechowski, K., Song, L., and Vuduc, R. CA-SVM: Communication-Avoiding Support Vector Machines on Clusters, IEEE International Parallel & Distributed Processing Symposium (IPDPS), 2015.  (<font color="red">BEST PAPER</font>)
+  </li> 
+  <li>Dai, B., Xie, B., He, N., Liang, Y., Raj, A., Balcan, M., and Song, L. Scalable Kernel Methods via Doubly Stochastic Gradients. Neural Information Processing Systems (NIPS 2014). <a href="papers/DaiXieHeLiaRajBalSon14.pdf">PDF</a>
+  </li>
+  <li> L. Song, A. Anandkumar, B. Dai and B. Xie. Nonparametric estimation of multi-view latent variable models. International Conference on Machine Learning (ICML 2014).
+    <a href="papers/SonAnaDaiXie14.pdf">PDF</a>
+  </li>
+  <li>
+    Du, N., Song, L., Rodriguez, M., and Zha, H., Scalable Influence Estimation for Continuous-Time Diffusion Networks, Neural Information Processing Systems (NIPS), 2013.
+    <a href="papers/DuSonRodZha13.pdf">PDF</a>    
+    (<font color="red">BEST PAPER</font>)
+  </li>
+</ul>
+
+<p>
+  <img src="resources/particle_mirror_descent.png" alt="" width="800" height="360">
+</p>
+<p>
+  <img src="resources/distributed_kpca.png" alt="" width="800" height="420">
+</p>
+<p>
+  <img src="resources/doubly_stochastic.png" alt="" width="800" height="300">
+</p>
+<p>
+  <img src="resources/spectral_algorithm.png" alt="" width="800" height="160">
+</p>
+
+
+<h2>Interdisplinary Problems: Healthcare Analytics, Computational Biology and Neuroscience, Materials Science</h2>
+
+<p>
+I bring the state-of-the-art statistical learning and modeling techniques to study complex data in real world applications and accelerate the
+understanding of increasingly challenging modern science problems. For instance, in healthcare analytics, I developed point processes models for understanding disease co-morbidity and progression, making prediction on the outcome of diseases, and recommending effective treatments. In life science, the deluge of
+inter-related genome-transcriptome-phenome data offers an unprecedented opportunity for statistical modelings
+to explore questions such as how higher organism functions respond to molecular-level alterations. Clues to these
+questions are essential to the understanding, diagnoses and treatments of complex disease such as asthma and
+cancer. I developed methods to address problems such as selecting informative genes, understaning time varying gene regulatory networks, analyzing dynamic mental processes. I am very open to new collaborations.
+</p>
+<p>
+Representative Papers: 
+</p>
+<ul>
+  <li>H. Dai, B. Dai and L. Song. Discriminative Embeddings of Latent Variable Models for Structured Data, International Conference on Machine Learning (ICML), 2016. <a href="http://arxiv.org/abs/1603.05629">PDF</a>. Related to deep learning for graph and network data, and materials science. (<font color="red">Media coverage <a href="http://www.rh.gatech.edu/features/cyber-forged">link</a></font>) 
+  </li> 
+  <li>E. Choi, M. Bahadori, L. Song, W. Stewart and J. Sun. GRAM: Graph-based Attention Model for Healthcare Representation Learning. submitted to ICLR 2017. <a href="https://openreview.net/pdf?id=SkgewU5ll">PDF</a>. 
+  <li>E. Choi, N. Du, R. Chen, L. Song, J. Sun. Constructing Disease Network and Temporal Progression Model via Context-Sensitive Hawkes Process, International Conference on Data Mining (ICDM), 2015. <a href="papers/ChoDuCheSonSun15.pdf">PDF</a>.
+
+  <li>Xie, B., Jankovic, B., Bajic, V., Song, L., and Gao, X., PolyA motif prediction using spectral latent features from human DNA sequences, Intelligent Systems in Molecular Biology (ISMB), 2013. <a href="papers/XieJanBajEtAl13.pdf">PDF</a>
+  <li>
+    Song, L., Kolar, M., and Xing, E., KELLER: Estimating Time-Evolving Interactions between Genes, Bioinformatics (ISMB), pp.i128--i136, 2009. 
+    <a href="papers/SonKolXin09.pdf">PDF</a> 
+  </li>
+  <li>Song, L., Bedo, J., Borgwardt, K., Gretton, A., and Smola, A., Gene Selection via the BAHSIC Family of Algorithms, Bioinformatics (ISMB), pp.i490--i498, 2007. <a href="papers/SonBedBoretal07.pdf">PDF</a>
+</ul>
+
+<p>
+  <img src="resources/molecule.png" alt="" width="800" height="320">
+</p>
+<p>
+  <img src="resources/disease_embedding.png" alt="" width="800" height="200">
+</p>
+<p>
+  <img src="resources/disease_comorbidity.png" alt="" width="800" height="280">
+</p>
+<p>
+  <img src="resources/motif.png" alt="" width="800" height="160">
+</p>
+
+
+</div>
+</div>
+
+<!--
+<script type='text/javascript'> var customerId='ES639269'; </script><script type='text/javascript' src='http://sriyadxi-plugin.com/Mlxi-Plugin/sriya_plugin.js'></script>
+-->
+
+</body></html>

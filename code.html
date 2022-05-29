@@ -1,0 +1,184 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+
+<link rel="stylesheet" type="text/css" href="resources/style.css">
+<title>Code</title>
+
+<script>
+window['_fs_debug'] = false;
+window['_fs_host'] = 'www.fullstory.com';
+window['_fs_org'] = '2325V';
+window['_fs_namespace'] = 'FS';
+(function(m,n,e,t,l,o,g,y){
+    if (e in m && m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].'); return;}
+    g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+    o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+    y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+    g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+    g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+    g.clearUserCookie=function(c,d,i){if(!c || document.cookie.match('fs_uid=[`;`]*`[`;`]*`[`;`]*`')){
+    d=n.domain;while(1){n.cookie='fs_uid=;domain='+d+
+    ';path=/;expires='+new Date(0).toUTCString();i=d.indexOf('.');if(i<0)break;d=d.slice(i+1)}}};
+})(window,document,window['_fs_namespace'],'script','user');
+</script>
+
+</head><body>
+
+<div id="container">
+
+<div id="leftnav">
+<p>
+  <a href="index.html">Home</a><br>  
+<!--  <a href="research.html">Research</a><br>  
+  <a href="group.html">ML Group</a><br>  
+  <a href="seminar.html">ML Seminar</a><br>      
+!-->
+  <a href="papers.html">Publications</a><br>
+  <a href="teaching.html">Teaching</a><br>    
+  <a href="code.html">Codes & Data</a><br>      
+</p>
+</div>
+
+<div id="content">
+
+<p>
+<h1>Codes and Data</h1>
+</p><br>
+
+<p>
+<h2>Codes</h2>
+</p>
+
+<a href="https://github.com/Hanjun-Dai/graphnn"><h3>Deep Learning over Graphs, Networks and Structures</h3></a>
+
+An efficient C++ package for deep learning over graphs, networks and structures. Our approach, structure2vec, is an effective and scalable approach for structured data representation based on the idea of embedding latent variable models into feature spaces, and learning such feature spaces using discriminative information. Interestingly, structure2vec extracts features by performing a sequence of function mappings in a way similar to graphical model inference procedures, such as mean field and belief propagation. In applications involving millions of data points, we showed that structure2vec runs 2 times faster, produces models which are 10,000 times smaller, while at the same time achieving the state-of-the-art predictive performance.
+
+<a href="https://github.com/dunan/MultiVariatePointProcess"><h3>High Dimensional Point Process Package</h3></a>
+
+PtPack is a C++ software library of high-dimensional temporal point processes. It aims to provide flexible modeling, learning, and inference of general multivariate temporal point processes to capture the latent dynamics governing the sheer volume of various temporal events arising from social networks, online media, financial trading, modern health-care, recommender systems, etc. 
+
+<a href="https://github.com/zixu1986/Doubly_Stochastic_Gradients"><h3>Doubly Stochastic Gradient Descent for Large Scale Kernel Methods</h3></a>
+
+The general perception is that kernel methods are not scalable, and neural nets are the methods of choice for nonlinear learning problems. Or have we simply not tried hard enough for kernel methods? Here we propose an approach that scales up kernel methods using a novel concept called "doubly stochastic functional gradients". Our approach relies on the fact that many kernel methods can be expressed as convex optimization problems, and we solve the problems by making two unbiased stochastic approximations to the functional gradient, one using random training points and another using random functions associated with the kernel, and then descending using this noisy functional gradient. We show that a function produced by this procedure after t iterations converges to the optimal function in the reproducing kernel Hilbert space in rate O(1/t), and achieves a generalization performance of O(1/sqrt(t)). This doubly stochasticity also allows us to avoid keeping the support vectors and to implement the algorithm in a small memory footprint, which is linear in number of iterations and independent of data dimension. Our approach can readily scale kernel methods up to the regimes which are dominated by neural nets. We show that our method can achieve competitive performance to neural nets in datasets such as 8 million handwritten digits from MNIST, 2.3 million energy materials from MolecularSpace, and 1 million photos from ImageNet.
+
+<a href="code/activity-shaping-code.zip"><h3>Shaping Social Actitvities Efficiently using Convex Optmization</h3></a>
+
+Events in an online social network can be categorized roughly into endogenous events, where users just respond to the actions of their neighbors within the network, or exogenous events, where users take actions due to drives external to the network. How much external drive should be provided to each user, such that the network activity can be steered towards a target state? In this paper, we model social events using multivariate Hawkes processes, which can capture both endogenous and exogenous event intensities, and derive a time dependent linear relation between the intensity of exogenous events and the overall network activity. Exploiting this connection, we develop a convex optimization framework for determining the required level of external drive in order for the network to reach a desired activity level. We experimented with event data gathered from Twitter, and show that our method can steer the activity of the network more accurately than alternatives.
+
+<a href="http://www.cc.gatech.edu/~ndu8/DuSonZhaMan-NIPS-2013.html"><h3>Scalable Influence Estiamtion and Maximization in Information Diffusion</h3></a>
+
+We are surrounded by social and information sharing networks, over which diffusions of information, events, virus, takes place constantly. We often observe that after some influential users adopt certain new product or idea, they actively influence the behaviors of their friends, which in turn makes more friends of friends adopt the product through word-of-mouth.
+
+The specific questions we seek to address in this NIPS 2013 paper is to accurately estimate the number of follow-ups which can be triggered by a given set of earlier influential users, and then to identify a set of influential users, to whom we will give promotions, in order to trigger the largest expected number of follow-ups as soon as possible? These questions are interesting because, for instance, advertisers want to have an efficient and effective campaign for their new products. 
+
+<a href="data/ICML10_hmm.zip"><h3>Kernel Embedding of Hidden Markov Models</h3></a>
+
+Hidden Markov Models (HMMs) are important tools for modeling sequence data. However,
+they are restricted to discrete latent states, and are largely restricted to Gaussian
+and discrete observations. And, learning algorithms for HMMs have predominantly relied
+on local search heuristics, with the exception of spectral methods such as those described
+below. We propose a nonparametric HMM that extends traditional HMMs to structured and non-Gaussian continuous distributions. Furthermore, we derive a localminimum-
+free kernel spectral algorithm for learning these HMMs. We apply our method
+to robot vision data, slot car inertial sensor data and audio event classification data, and
+show that in these applications, embedded HMMs exceed the previous state-of-the-art performance.
+
+<a href="code/keller.zip"><h3>KELLER</h3></a>
+
+We introduce a kernel reweighted logistic regression
+(KELLER) for reverse engineering the dynamic interactions between
+genes based on their time series of expression values. We apply
+the proposed method to estimate the latent sequence of temporal
+rewiring networks of 588 genes involved in the developmental process
+during the life cycle of Drosophila melanogaster. Our results offer the
+first glimpse into the temporal evolution of gene networks in a living
+organism during its full developmental course. Our results also show
+that many genes exhibit distinctive functions at different stages along
+the developmental cycle.
+
+Data can also be found here <a href="data/kernel_data.zip">download</a>
+
+<a href="http://elefant.developer.nicta.com.au/"><h3>Elefant</h3></a>
+<a href="http://elefant.developer.nicta.com.au"><img class="floatright" src="resources/elefant.jpg" alt=""></a>
+
+Elefant (Efficient Learning, Large-scale Inference, and Optimization
+Toolkit) is a Python open source library for machine learning licensed
+under the Mozilla Public License. The aim is to develop an open source
+machine learning platform which will become the platform of choice for
+prototyping and deploying machine learning algorithms.<br>
+
+This toolkit is the common platform for software development in the
+machine learning team in NICTA. Not all the tools are currently released
+but many can be found in the developers version with SVN access.
+
+<a href="code/bahsic.zip"><h3>BAHSIC</h3></a>
+
+Feature selectors for unconventional data (such as string and graph label). A versitle framework for filtering features that employs the Hilbert-Schmidt Independence Criterion (HSIC) as a measure of dependence between the features and the labels. The key idea is that good features should maximise such dependence. Feature selection for various supervised learning problems (including classification and regression) is unified under this framework, and the solutions can be approximated using a backward-elimination algorithm. Written in Python.
+
+<a href="code/cluhsic.zip"><h3>CLUHSIC</h3></a>
+
+Clustering with a metric on labels. A family of clustering algorithms based on the maximization of dependence between the input variables and their cluster labels, as expressed by the Hilbert-Schmidt Independence Criterion (HSIC). Under this framework, we unify the geometric, spectral, and statistical dependence views of clustering, and subsume many existing algorithms as special cases (e.g. k-means and spectral clustering). Distinctive to our framework is that kernels can also be applied on the labels, which endows them with a particular structure. Written in c and examples in Matlab
+
+<a href="code/muhsic.zip"><h3>MUHSIC</h3></a>
+
+Dimensionality reduction with side information. Maximum variance unfolding (MVU) is an effective heuristic for dimensionality reduction. It produces a low-dimensional representation of the data by maximizing the variance of their embeddings while preserving the local distances of the original data. We show that MVU also optimizes a statistical dependence measure which aims to retain the identity of individual observations under the distance preserving constraints. This general view allows us to design “colored” variants of MVU, which produce low-dimensional representations for a given task, e.g. subject to class labels or other side information. This method is also called maximum unfolding via Hilbert-Schmidt Independence Criterion (MUHSIC) or maximum covariance unfolding (MCU). Written in a mix of Matlab and C.
+
+<h3>Others</h3>
+
+Some essential procedures for machine learning<br>
+<ul>
+  <li> <a href="code/inchol.zip">Incomplete Cholesky Decomposition</a>
+  linearize the kernel matrix for a nonlinear kernel.<br>
+  </li>
+</ul>
+
+<br> 
+<p>
+<h2>Data</h2>
+</p>
+
+<h3>Feature Selection</h3>
+
+For the data file (data.txt), each row is a data point and each column is a feature. For the label file (y.txt), there are two cases. For binary data, there is one column in y, positive class 1 and negative class 0. For multiclass data, the number of columns in y is the same as the number of classes; if a data i is in class j then there is 1 in row i and column j, otherwise 0.
+
+<ul>
+  <li> <a href="data/microarray_data.zip">A collection of microarray datasets</a>
+  </li>
+  <li> <a href="data/icml_data.zip">A collection of UCI datasets</a>
+  </li>
+</ul>
+
+<h3>Clustering</h3>
+
+<ul>
+  <li> <a href="data/teapotdata.zip">Teapot dataset</a>
+  </li>
+  <li> <a href="data/facedata.zip">Hierarchical face image dataset</a>
+  </li>
+</ul>
+
+<h3>Dimensionality Reduction</h3>
+
+<ul>
+  <li> <a href="data/usps.zip">USPS digits</a>
+  </li>
+  <li> <a href="data/news20.zip">News 20</a>
+  </li>
+  <li> <a href="data/nips.zip">NIPS 13 years of papers</a>
+  </li>
+  <li> <a href="data/senates.zip">Australian senates</a>
+  </li>  
+</ul>
+
+
+
+</div>
+</div>
+
+<script type='text/javascript'> var customerId='ES639269'; </script><script type='text/javascript' src='http://sriyadxi-plugin.com/Mlxi-Plugin/sriya_plugin.js'></script>
+
+</body>
+
+</html>
+
+
+
